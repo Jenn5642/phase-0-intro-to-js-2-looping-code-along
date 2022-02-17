@@ -1,27 +1,19 @@
 
-let names = ["Charlie", "Samip", "Ali"];
-function writeCards(names) {
-    const messages = [] 
-for (let i = 0; i < names.length; i++) {
-    messages.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`)
-}
-return messages;
-}
-console.log(writeCards(names))
 
-
-function countDown() {
-    let int = 10
-while (int >= 0) {
-    console.log(int);
-    int--
+let cards = ["Charlie", "Samip", "Ali"];
+function writeCards(cards) {
+    const greeting = []
+    for (let a = 0; a < cards.length; a++){
+        greeting.push(`Thank you, ${cards[a]}, for the wonderful surprise gift!`);
+   
+    }
+    return greeting;
 }
+console.log(writeCards(cards))
 
-// const name = "Jenn"
-// const job = "project manager"
-// function sayHi(name) {
-//     console.log(`hi ${name}`)
-// }
-// sayHi(name)
-// sayHi("Brian")
+function countDown(){
+let countDown = 0;
+while (countDown < 11){
+    console.log(countDown++);
+}
 }
